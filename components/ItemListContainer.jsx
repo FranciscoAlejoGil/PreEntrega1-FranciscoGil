@@ -7,7 +7,7 @@ function ItemListContainer () {
 
     useEffect(() => {
         fetch('https://api.escuelajs.co/api/v1/products')
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => setProducts(data));
     }, []);
 

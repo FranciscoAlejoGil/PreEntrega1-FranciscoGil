@@ -1,21 +1,15 @@
-import CartWidget from "./CartWidget.jsx";
+import { Link } from "react-router-dom"
 
-function NavBar() {
+function NavBar(){
 
-    return (
-    <header className=" flex justify-between p-4 font-bold bg-slate-300 shadow-md">
-        <CartWidget />
-        <h1 className="text-3xl p-2">
-            Zer0 Cmpany
-        </h1>
+    return(
         <nav className="p-3 flex hidden md:flex md:gap-4">
-            <a href="#">Productos</a>
-            <a href="#">Ofertas</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Ayuda</a>
+            <Link to={"/"}>Inicio</Link>
+            <Link to={"/productos"}>Productos</Link>
+            <Link to={"/nosotros"}>Nosotros</Link>
+            <Link to={"/ayuda"}>Ayuda</Link>
         </nav>
-    </header>
     )
 }
 
-export default NavBar;
+export default NavBar

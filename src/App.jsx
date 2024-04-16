@@ -1,12 +1,13 @@
-import NavBar from "../components/NavBar.jsx";
-import ItemListConteiner from "../components/ItemListContainer.jsx";
+import Header from "../components/Header.jsx";
+import Main from "../components/Main.jsx";
+import { BrowserRouter } from "react-router-dom";
 function App() {
   
   return (
-    <>
-      <NavBar/>
-      <ItemListConteiner greeting={"Bienvenidos a la tienda oficial de Zer0 Cmpany"}/>
-    </>
+    <BrowserRouter>
+      <Header/>
+      <Main/>
+    </BrowserRouter>
   )
 }
 

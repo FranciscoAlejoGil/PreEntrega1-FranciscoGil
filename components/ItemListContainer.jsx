@@ -6,9 +6,17 @@ function ItemListContainer () {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://api.escuelajs.co/api/v1/products')
-            .then(res => res.json())
-            .then(data => setProducts(data));
+        
+        fetch("https://fakestoreapi.com/products")
+        .then((res) =>{ 
+            return res.json()
+            })
+        .then((res) =>{
+            setProducts(res) 
+        })
+        .catch((err) => {
+            console.log(err)
+        })
     }, []);
 
     return (

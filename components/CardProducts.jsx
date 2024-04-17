@@ -2,12 +2,12 @@ import { Link } from "react-router-dom"
 
 function CardProducts ({ product }) {
 
-    const {title, id, images, price} = product
+    const {title, id, image, price} = product
 
     return (
         <div className="p-3 transition rounded-md shadow-md user-card hover:scale-105 hover:bg-slate-100 group bg-slate-200 gap-4">
             <div className="">
-                <img className=" p-4 rounded" src={images} alt={title} />
+                <img className=" p-4 rounded" src={image}/>
             </div>
             <ul>
                 <li><h2 className="my-2 text-black">{title}</h2></li>

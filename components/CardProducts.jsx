@@ -12,7 +12,7 @@ function CardProducts ({ product }) {
             <ul>
                 <li><h2 className="my-2 text-black">{title}</h2></li>
                 <li className="my-2">Precio: ${price}</li>
-                <li><Link to={`/products/${id}`}>Ver mas</Link></li>
+                <li className="hover:underline"><Link to={`/products/${id}`}>Ver mas</Link></li>
             </ul>
         </div>
         

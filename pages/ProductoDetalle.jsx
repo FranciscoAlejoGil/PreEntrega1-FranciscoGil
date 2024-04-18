@@ -12,7 +12,7 @@ function ProductoDetalle() {
                 return res.json()
             })
             .then((res) => {
-                setProduct(res.results)
+                setProduct(res)
             })
             .catch((err) => {
                 console.log(err)

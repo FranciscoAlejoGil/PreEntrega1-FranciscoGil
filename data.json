@@ -1,0 +1,103 @@
+{"tienda":
+    {
+    "products": 
+        [
+            {
+                "id": 1,
+                "nombre": "Hands Hoodie",
+                "descripcion": "Product 1 description",
+                "categoria": "buzos",
+                "precio": 100,
+                "imagen": "../images/sweater.png"  
+            },
+            {
+                "id": 2,
+                "nombre": "Chrome Shirt",
+                "descripcion": "Product 2 description",
+                "categoria": "remeras",
+                "precio": 200,
+                "imagen": "../images/remera01.png"
+            },
+            {
+                "id": 3,
+                "nombre": "Product 3",
+                "descripcion": "Product 3 description",
+                "categoria": "buzos",
+                "precio": 200,
+                "imagen": "../images/buzoface.png"
+            },
+            {
+                "id": 4,
+                "nombre": "Product 4",
+                "descripcion": "Product 4 description",
+                "categoria": "remeras",
+                "precio": 300,
+                "imagen": "../images/remee02.png"
+            },
+            {
+                "id": 5,
+                "nombre": "Product 5",
+                "descripcion": "Product 5 description",
+                "categoria": "buzos",
+                "precio": 300,
+                "imagen": "../images/bucito.png"
+            },
+            {
+                "id": 6,
+                "nombre": "Product 6",
+                "descripcion": "Product 6 description",
+                "categoria": "pantalones",
+                "precio": 400,
+                "imagen": "../images/pantdes.png"
+            },
+            {
+                "id": 7,
+                "nombre": "Product 7",
+                "descripcion": "Product 7 description",
+                "categoria": "bermudas",
+                "precio": 400,
+                "imagen": "../images/bermuvenom.png"
+            },
+            {
+                "id": 8,
+                "nombre": "Product 8",
+                "descripcion": "Product 8 description",
+                "categoria": "buzos",
+                "precio": 500,
+                "imagen": "../images/buzofondowt.png"
+            },
+            {
+                "id": 9,
+                "nombre": "Product 9",
+                "descripcion": "Product 9 description",
+                "categoria": "remeras",
+                "precio": 500,
+                "imagen": "../images/reme03.png"
+            },
+            {
+                "id": 10,
+                "nombre": "Product 10",
+                "descripcion": "Product 10 description",
+                "categoria": "pantalones",
+                "precio": 600,
+                "imagen": "../images/pant.png"
+            },
+            {
+                "id": 11,
+                "nombre": "Product 11",
+                "descripcion": "Product 11 description",
+                "categoria": "buzos",
+                "precio": 600,
+                "imagen": "../images/buzocinto.png"
+            },
+            {
+                "id": 12,
+                "nombre": "Product 12",
+                "descripcion": "Product 12 description",
+                "categoria": "bermudas",
+                "precio": 700,
+                "imagen": "../images/bermuda.png"
+            }
+        ]
+    }
+}

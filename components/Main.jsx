@@ -7,11 +7,11 @@ import ProductoDetalle from '../pages/ProductoDetalle'
 
 function Main() {
     return (
-        <main className="bg-slate-300">
+        <main className="bg-zinc-400">
             <Routes>
                 <Route path='/' element={<Inicio/>}/>
                 <Route path='/productos' element={<Productos/>}/>
-                <Route path='/category/:category' element={<Productos/>} />
+                <Route path='/categoria/:categoryId' element={<Productos/>} />
                 <Route path='/products/:Id' element={<ProductoDetalle/>}></Route>
                 <Route path='/nosotros' element={<Nosotros/>}/>
                 <Route path='/ayuda' element={<Ayuda/>}/>

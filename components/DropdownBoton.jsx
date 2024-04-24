@@ -13,7 +13,7 @@ const DropdownBoton = () => {
         <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            className="text-md text-black font-bold-normal inline-flex rounded-md px-4 focus:outline-none"
+            className="text-md text-white font-bold-normal inline-flex rounded-md px-4 focus:outline-none hover:scale-125 transition"
             id="options-menu"
             aria-haspopup="true"
             aria-expanded="true"
@@ -33,13 +33,13 @@ const DropdownBoton = () => {
     </button>
 
     {isOpen && (
-        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-zinc-200 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
         <div className="py-1" role="none">
-            <Link to={"/productos"} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" onClick={handleOptionClick}>Todos los Productos</Link>
-            <Link to={"/category/men's clothing"} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" onClick={handleOptionClick}>Hombre</Link>
-            <Link to={"/category/women's clothing"} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" onClick={handleOptionClick}>Mujer</Link>
-            <Link to={"/category/jewelery"} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" onClick={handleOptionClick}>Joyeria</Link>
-            <Link to={"/category/electronics"} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" onClick={handleOptionClick}>Electronica</Link>
+            <Link to={"/productos"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Todos los Productos</Link>
+            <Link to={"/categoria/buzos"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Buzos</Link>
+            <Link to={"/categoria/remeras"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Remeras</Link>
+            <Link to={"/categoria/pantalones"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Pantalones</Link>
+            <Link to={"/categoria/bermudas"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Bermudas</Link>
         </div>
         </div>
     )}

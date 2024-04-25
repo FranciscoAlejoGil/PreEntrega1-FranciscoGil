@@ -1,9 +1,10 @@
-function Inicio(){
-    return(
+function Inicio () {
+    return (
         <div>
-            <h1>Hola soy el inicio</h1>
+            <h1>Inicio</h1>
         </div>
     )
 }
+
 
 export default Inicio

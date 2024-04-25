@@ -30,8 +30,8 @@ function ItemListContainer () {
     }, [categoryId]);
 
     return (
-        <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 gap-y-8">
+        <div className="mx-auto sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:gap-8 xl:gap-8">
             {products.map((product) => {
                 return <CardProducts key={product.id} product={product} />
             })}

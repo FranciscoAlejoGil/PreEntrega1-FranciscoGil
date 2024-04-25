@@ -12,11 +12,11 @@
             },
             {
                 "id": 2,
-                "nombre": "Chrome Shirt",
+                "nombre": "Face Shirt",
                 "descripcion": "Product 2 description",
                 "categoria": "remeras",
                 "precio": 200,
-                "imagen": "../images/remera01.png"
+                "imagen": "../images/remecara.png"
             },
             {
                 "id": 3,
@@ -32,7 +32,7 @@
                 "descripcion": "Product 4 description",
                 "categoria": "remeras",
                 "precio": 300,
-                "imagen": "../images/remee02.png"
+                "imagen": "../images/remerota.png"
             },
             {
                 "id": 5,

@@ -19,7 +19,7 @@ function ProductoDetalle() {
     }, [id]);
 
     return (
-        <div className="p-3 grid grid-cols-2 gap-40 bg-zinc-400">
+        <div className="p-3 grid grid-cols-2 gap-40 bg-zinc-800">
             <div>
             <h2 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">{product.nombre}</h2>
             <p className="mb-4 font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl">${product.precio}</p>

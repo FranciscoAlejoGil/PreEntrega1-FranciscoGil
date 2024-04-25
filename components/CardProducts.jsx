@@ -5,14 +5,14 @@ function CardProducts ({ product }) {
     
 
     return (
-        <div className="p-3 transition rounded-md shadow-md user-card hover:scale-105 hover:bg-zinc-100 group bg-zinc-300 gap-4">
-            <div className="">
-                <img className=" p-4 rounded" src={product.imagen}/>
+        <div className="p-3 transition rounded-md shadow-lg shadow-black user-card hover:scale-105 hover:bg-gradient-to-r from-zinc-600 to-zinc-400 group bg-zinc-600 gap-5">
+            <div>
+                <img className=" p-3 rounded" src={product.imagen}/>
             </div>
-            <ul>
-                <li><h2 className="my-2 text-black">{product.nombre}</h2></li>
+            <ul className="text-white">
+                <li><h2 className="my-2 font-bold text-lg">{product.nombre}</h2></li>
                 <li className="my-2">Precio: ${product.precio}</li>
-                <li className="hover:underline"><Link to={`/products/${product.id}`}>Ver mas</Link></li>
+                <li className="hover:underline w-1/4 italic"><Link to={`/products/${product.id}`}>Ver mas</Link></li>
             </ul>
         </div>
         

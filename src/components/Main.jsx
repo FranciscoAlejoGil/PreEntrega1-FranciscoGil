@@ -4,15 +4,19 @@ import Productos from '../pages/Productos'
 import Nosotros from '../pages/Nosotros'
 import Ayuda from '../pages/Ayuda'
 import ProductoDetalle from '../pages/ProductoDetalle'
+import Carrito from '../pages/Carrito'
+import BotonUp from '../components/BotonUp'
 
 function Main() {
     return (
         <main className="bg-zinc-800">
+            <BotonUp/>
             <Routes>
                 <Route path='/' element={<Inicio/>}/>
+                <Route path='/carrito' element={<Carrito/>}/>
                 <Route path='/productos' element={<Productos/>}/>
                 <Route path='/categoria/:categoryId' element={<Productos/>} />
-                <Route path='/products/:Id' element={<ProductoDetalle/>}></Route>
+                <Route path='/products/:id' element={<ProductoDetalle/>}></Route>
                 <Route path='/nosotros' element={<Nosotros/>}/>
                 <Route path='/ayuda' element={<Ayuda/>}/>
             </Routes>

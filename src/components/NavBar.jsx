@@ -4,11 +4,11 @@ import DropdownBoton from "./DropdownBoton"
 function NavBar(){
 
     return(
-        <nav className="p-3 flex sm:hidden md:flex md:gap-4 text-white">
-            <Link className="hover:scale-125 transition" to={"/"}>Inicio</Link>
+        <nav className="md:p-2 lg:p-3 group flex lg:gap-4 md:gap-3 text-white">
+            <Link className="hover:scale-110 transition md:text-sm lg:text-lg" to={"/"}>Inicio</Link>
             <DropdownBoton></DropdownBoton>
-            <Link className="hover:scale-125 transition" to={"/nosotros"}>Nosotros</Link>
-            <Link className="hover:scale-125 transition" to={"/ayuda"}>Ayuda</Link>
+            <Link className="hover:scale-110 transition md:text-sm lg:text-lg" to={"/nosotros"}>Nosotros</Link>
+            <Link className="hover:scale-110 transition md:text-sm lg:text-lg" to={"/ayuda"}>Ayuda</Link>
         </nav>
     )
 }

@@ -5,7 +5,8 @@ import Nosotros from '../pages/Nosotros'
 import Ayuda from '../pages/Ayuda'
 import ProductoDetalle from '../pages/ProductoDetalle'
 import Carrito from '../pages/Carrito'
-import BotonUp from '../components/BotonUp'
+import BotonUp from './BotonIg'
+import CuatroCeroCuatro from '../pages/CuatroCeroCuatro'
 
 function Main() {
     return (
@@ -19,6 +20,7 @@ function Main() {
                 <Route path='/products/:id' element={<ProductoDetalle/>}></Route>
                 <Route path='/nosotros' element={<Nosotros/>}/>
                 <Route path='/ayuda' element={<Ayuda/>}/>
+                <Route path='*' element={<CuatroCeroCuatro/>} />
             </Routes>
         </main>
     )

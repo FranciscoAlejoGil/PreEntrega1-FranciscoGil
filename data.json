@@ -4,98 +4,98 @@
         [
             {
                 "id": 1,
-                "nombre": "Hands Hoodie",
+                "nombre": "LOCKED INSIDE HOOD",
                 "descripcion": "Product 1 description",
                 "categoria": "buzos",
-                "precio": 100,
+                "precio": 55000,
                 "imagen": "../images/sweater.png"  
             },
             {
                 "id": 2,
-                "nombre": "Face Shirt",
+                "nombre": "SOUL T-SHIRT",
                 "descripcion": "Product 2 description",
                 "categoria": "remeras",
-                "precio": 200,
+                "precio": 37500,
                 "imagen": "../images/remecara.png"
             },
             {
                 "id": 3,
-                "nombre": "Product 3",
+                "nombre": "FACE HOOD",
                 "descripcion": "Product 3 description",
                 "categoria": "buzos",
-                "precio": 200,
+                "precio": 58900,
                 "imagen": "../images/buzoface.png"
             },
             {
                 "id": 4,
-                "nombre": "Product 4",
+                "nombre": "RIPPED T-SHIRT",   
                 "descripcion": "Product 4 description",
                 "categoria": "remeras",
-                "precio": 300,
+                "precio": 34300,
                 "imagen": "../images/remerota.png"
             },
             {
                 "id": 5,
-                "nombre": "Product 5",
+                "nombre": "STFU! HOOD",
                 "descripcion": "Product 5 description",
                 "categoria": "buzos",
-                "precio": 300,
+                "precio": 59000,
                 "imagen": "../images/bucito.png"
             },
             {
                 "id": 6,
-                "nombre": "Product 6",
+                "nombre": "ALL IN ONE PANT", 
                 "descripcion": "Product 6 description",
                 "categoria": "pantalones",
-                "precio": 400,
+                "precio": 43000,
                 "imagen": "../images/pantdes.png"
             },
             {
                 "id": 7,
-                "nombre": "Product 7",
+                "nombre": "NOMAD BERMU",
                 "descripcion": "Product 7 description",
                 "categoria": "bermudas",
-                "precio": 400,
+                "precio": 33300,
                 "imagen": "../images/bermuvenom.png"
             },
             {
                 "id": 8,
-                "nombre": "Product 8",
-                "descripcion": "Product 8 description",
+                "nombre": "KUMAO HOOD",
+                "descripcion": "KUMAO HOOD description",
                 "categoria": "buzos",
-                "precio": 500,
+                "precio": 77700,
                 "imagen": "../images/buzofondowt.png"
             },
             {
                 "id": 9,
-                "nombre": "Product 9",
-                "descripcion": "Product 9 description",
+                "nombre": "REMEMBER ME T-SHIRT",
+                "descripcion": "REMEMBER ME T-SHIRT description",
                 "categoria": "remeras",
-                "precio": 500,
+                "precio": 34400,
                 "imagen": "../images/reme03.png"
             },
             {
                 "id": 10,
-                "nombre": "Product 10",
-                "descripcion": "Product 10 description",
+                "nombre": "CUTE PANT",
+                "descripcion": "CUTE PANT description",
                 "categoria": "pantalones",
-                "precio": 600,
+                "precio": 46000,
                 "imagen": "../images/pant.png"
             },
             {
                 "id": 11,
-                "nombre": "Product 11",
-                "descripcion": "Product 11 description",
+                "nombre": "BELT HOOD",
+                "descripcion": "BELT HOOD description",
                 "categoria": "buzos",
-                "precio": 600,
+                "precio": 72000,
                 "imagen": "../images/buzocinto.png"
             },
             {
                 "id": 12,
-                "nombre": "Product 12",
-                "descripcion": "Product 12 description",
+                "nombre": "SPOTTED BERMU",
+                "descripcion": "SPOTTED BERMU description",
                 "categoria": "bermudas",
-                "precio": 700,
+                "precio": 32000,
                 "imagen": "../images/bermuda.png"
             }
         ]

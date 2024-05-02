@@ -9,11 +9,11 @@ const DropdownBoton = () => {
     };
 
     return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left z-50">
         <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            className="text-md text-white font-bold-normal inline-flex rounded-md px-4 focus:outline-none hover:scale-125 transition"
+            className=" text-white font-bold-normal inline-flex rounded-md focus:outline-none hover:scale-110 transition md:text-sm lg:text-lg"
             id="options-menu"
             aria-haspopup="true"
             aria-expanded="true"

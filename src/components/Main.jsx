@@ -10,7 +10,7 @@ import CuatroCeroCuatro from '../pages/CuatroCeroCuatro'
 
 function Main() {
     return (
-        <main className="bg-zinc-800">
+        <main className="bg-zinc-800 h-full">
             <BotonUp/>
             <Routes>
                 <Route path='/' element={<Inicio/>}/>

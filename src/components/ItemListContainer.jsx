@@ -1,6 +1,7 @@
 import CardProducts from "./CardProducts" 
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
+import { getProducts } from "../utils";
 
 function ItemListContainer () {
 
@@ -8,7 +9,7 @@ function ItemListContainer () {
     const { categoryId } = useParams();
 
     useEffect(() => {
-        fetch("/data.json")
+        /*fetch("/data.json")
             .then((res) => {
             return res.json();
         })
@@ -24,9 +25,12 @@ function ItemListContainer () {
             );
             setProduct(filteredProducts);
             return;
-        }
-        setProduct(products);
-        });
+        }*/
+        
+        getProducts()
+        .then((resultado) => {
+            setProduct(resultado)
+        })
     }, [categoryId]);
 
     return (

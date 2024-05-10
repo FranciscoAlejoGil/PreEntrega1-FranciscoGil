@@ -36,10 +36,10 @@ const DropdownBoton = () => {
         <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-zinc-200 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
         <div className="py-1" role="none">
             <Link to={"/productos"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Todos los Productos</Link>
-            <Link to={"/categoria/buzos"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Buzos</Link>
-            <Link to={"/categoria/remeras"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Remeras</Link>
-            <Link to={"/categoria/pantalones"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Pantalones</Link>
-            <Link to={"/categoria/bermudas"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Bermudas</Link>
+            <Link to={"/category/buzos"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Buzos</Link>
+            <Link to={"/category/remeras"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Remeras</Link>
+            <Link to={"/category/pantalones"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Pantalones</Link>
+            <Link to={"/category/bermudas"} className="block px-4 py-2 text-sm text-zinc-400 hover:bg-zinc-300 hover:text-zinc-700" role="menuitem" onClick={handleOptionClick}>Bermudas</Link>
         </div>
         </div>
     )}

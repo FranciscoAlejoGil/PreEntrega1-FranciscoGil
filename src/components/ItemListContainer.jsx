@@ -1,37 +1,29 @@
 import CardProducts from "./CardProducts" 
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
-import { getProducts } from "../utils";
+import { getProducts, getProductsbyCategory } from "../utils";
 
 function ItemListContainer () {
 
     const [products, setProduct] = useState([]);
-    const { categoryId } = useParams();
+    const params = useParams();
 
     useEffect(() => {
-        /*fetch("/data.json")
-            .then((res) => {
-            return res.json();
-        })
-        .then((jsonData) => {
-            const {
-            tienda: { products },
-            } = jsonData;
 
-            if (categoryId) {
-            const filteredProducts = products.filter(
-            (product) =>
-                product.categoria.toLowerCase() === categoryId.toLowerCase()
-            );
-            setProduct(filteredProducts);
-            return;
-        }*/
-        
-        getProducts()
-        .then((resultado) => {
-            setProduct(resultado)
-        })
-    }, [categoryId]);
+        if(params.categoria) {
+            getProductsbyCategory(params.categoria)
+            .then((resultado)=>{
+                setProduct(resultado)
+            })
+
+        } else {
+            getProducts()
+            .then((resultado)=>{
+                setProduct(resultado)
+            })
+        }
+    }, [params.categoria])
+
 
     return (
         <div className="mx-auto xs:p-5 sm:p-5 lg:max-w-7xl lg:p-8">

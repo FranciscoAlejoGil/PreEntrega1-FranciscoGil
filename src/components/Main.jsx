@@ -16,7 +16,7 @@ function Main() {
                 <Route path='/' element={<Inicio/>}/>
                 <Route path='/carrito' element={<Carrito/>}/>
                 <Route path='/productos' element={<Productos/>}/>
-                <Route path='/categoria/:categoryId' element={<Productos/>} />
+                <Route path='/category/:categoryId' element={<Productos/>} />
                 <Route path='/products/:id' element={<ProductoDetalle/>}></Route>
                 <Route path='/nosotros' element={<Nosotros/>}/>
                 <Route path='/ayuda' element={<Ayuda/>}/>

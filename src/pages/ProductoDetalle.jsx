@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import Contador from "../components/Contador";
+import { getProductDetail } from "../utils";
 
 function ProductoDetalle() {
 
@@ -8,16 +9,11 @@ function ProductoDetalle() {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        fetch('../data.json').then((res) => {
-        return res.json();
+        getProductDetail(id)
+        .then((resultado) => {
+            setProduct(resultado);
         })
-        .then((jsonData) => {
-            const { tienda: { products } } = jsonData;
-            const product = products.find((product) => product.id === parseInt(id));
-    
-            setProduct(product);
-        });
-    }, [id]);
+    }, []);
 
     return (
         <div className="p-3 grid grid-cols-2 gap-40 bg-zinc-800">

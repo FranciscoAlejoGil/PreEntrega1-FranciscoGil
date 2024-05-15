@@ -1,4 +1,4 @@
-import { collection, getDocs, getFirestore, query, where } from "firebase/firestore"
+import { collection, getDocs, getFirestore, query, where, doc } from "firebase/firestore"
 import { app } from "./firebase"
 
 export const getProducts = () => {
@@ -21,7 +21,6 @@ export const getProducts = () => {
         console.log(error)
     })
 }
-
 export const getProductsbyCategory = (categoria) => {
 
     const db = getFirestore(app)
@@ -40,6 +39,23 @@ export const getProductsbyCategory = (categoria) => {
     return productos
     })
     .catch((error) =>{ 
+        console.log(error)
+    })
+}
+
+export const getProductDetail = (id) => {
+    const db = getFirestore(app)
+    const productsCollection = collection(db, "products")
+    const filtro = doc(productsCollection, id)
+    const query = getDocs(filtro)
+
+    return query
+    .then((resultado) => {
+        const producto = resultado.data()
+        producto.id = resultado.id
+        return producto 
+    })
+    .catch((error) => {
         console.log(error)
     })
 }

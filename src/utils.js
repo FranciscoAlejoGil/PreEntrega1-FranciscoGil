@@ -25,7 +25,7 @@ export const getProductsbyCategory = (categoria) => {
 
     const db = getFirestore(app)
     const productsCollection = collection(db, "products")
-    const filtro = query(productsCollection,where("categoria", "==", categoria))
+    const filtro = query(productsCollection, where("category", "==", categoria))
     const consulta = getDocs(filtro)
 
     return consulta
@@ -47,9 +47,9 @@ export const getProductDetail = (id) => {
     const db = getFirestore(app)
     const productsCollection = collection(db, "products")
     const filtro = doc(productsCollection, id)
-    const query = getDocs(filtro)
+    const consulta = getDocs(filtro)
 
-    return query
+    return consulta
     .then((resultado) => {
         const producto = resultado.data()
         producto.id = resultado.id

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
-import Producto from "../components/Producto";
 import { getProductDetail } from "../utils";
+import ItemDetail from "../components/ItemDetail";
 
 function ProductoDetalle() {
 
@@ -17,7 +17,7 @@ function ProductoDetalle() {
 
     return (
         <div>
-            <Producto product={product}/>
+            <ItemDetail product={product}/>
         </div>
     )
 }

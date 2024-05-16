@@ -1,4 +1,9 @@
+import useCart from "../hook/useCart"
+
 function Carrito () {
+
+    const {carrito} = useCart()
+    console.log(carrito);
 
     return (
         <div className="flex justify-center p-5 h-full">

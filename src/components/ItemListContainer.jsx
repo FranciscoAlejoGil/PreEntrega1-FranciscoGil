@@ -1,7 +1,7 @@
-import CardProducts from "./CardProducts" 
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { getProducts, getProductsbyCategory } from "../utils";
+import ItemList from "./ItemList";
 
 function ItemListContainer () {
 
@@ -27,7 +27,7 @@ function ItemListContainer () {
 
     return (
         <div>
-            <CardProducts products={products} />            
+            <ItemList products={products} />            
         </div>  
     )
 }

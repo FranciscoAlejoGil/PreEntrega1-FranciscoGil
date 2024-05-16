@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-function CardProducto ({ product }) {
+function ItemDetailContainer ({ product }) {
     return (
         <div className="p-3 lg:w-auto lg:h-auto md:w-44 md:h-auto rounded-md shadow-lg group shadow-black user-card md:hover:scale-105 hover:scale-110 transition duration-500 hover:bg-gradient-to-r from-zinc-600 to-zinc-400 group bg-zinc-600 gap-5">
             <div>
@@ -16,4 +16,4 @@ function CardProducto ({ product }) {
     )
 }
 
-export default CardProducto
+export default ItemDetailContainer

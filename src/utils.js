@@ -1,4 +1,4 @@
-import { collection, getDocs, getFirestore, query, where, doc } from "firebase/firestore"
+import { collection, getDocs, getFirestore, query, where, doc, getDoc } from "firebase/firestore"
 import { app } from "./firebase"
 
 export const getProducts = () => {
@@ -43,19 +43,20 @@ export const getProductsbyCategory = (categoria) => {
     })
 }
 
-export const getProductDetail = (id) => {
-    const db = getFirestore(app)
-    const productsCollection = collection(db, "products")
-    const filtro = doc(productsCollection, id)
-    const consulta = getDocs(filtro)
+export const getProductDetail = async (id) => {
+    const db = getFirestore(app);
 
-    return consulta
-    .then((resultado) => {
-        const producto = resultado.data()
-        producto.id = resultado.id
-        return producto 
-    })
-    .catch((error) => {
-        console.log(error)
-    })
+    try {
+        const docRef = doc(db, "products", id);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+            return { ...docSnap.data(), id: docSnap.id };
+        } else {
+            return null;
+        }
+
+    } catch (e) {
+        console.error("Error getting document:", e);
+    }
 }

@@ -1,4 +1,3 @@
-import { push } from "firebase/database";
 import { createContext, useState } from "react";
 
 export const contexto = createContext();
@@ -8,7 +7,7 @@ export function CarritoProvider(props) {
 
     const [cantCarrito, setcantCarrito] = useState(0)
     const [precioTotal, setprecioTotal] = useState(0)
-    const {carrito, setCarrito} = useState([])
+    const [carrito, setCarrito] = useState([])
 
     const agregarAlCarrito = (cant, item) => {
         setcantCarrito(cantCarrito + cant);

@@ -1,12 +1,20 @@
 import { useContext } from "react"
 import Contador from "./Contador"
 import { contexto } from "../context"
+import Swal from "sweetalert2"
 function ItemDetail ({product}) {
 
     const valorActual = useContext(contexto)
 
     const handleConfirm = (numero) => {
         valorActual.agregarAlCarrito(numero, product)
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Agregado al carrito',
+            showConfirmButton: false,
+            timer: 1500
+        })
     }
 
     return (

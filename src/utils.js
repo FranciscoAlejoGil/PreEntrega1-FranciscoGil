@@ -1,4 +1,4 @@
-import { collection, getDocs, getFirestore, query, where, doc, getDoc } from "firebase/firestore"
+import { collection, getDocs, getFirestore, query, where, doc, getDoc, addDoc, serverTimestamp } from "firebase/firestore"
 import { app } from "./firebase"
 
 export const getProducts = () => {
@@ -59,4 +59,21 @@ export const getProductDetail = async (id) => {
     } catch (e) {
         console.error("Error getting document:", e);
     }
+}
+
+export const createSale = () =>{
+    const db = getFirestore(app)
+    const saleCollection = collection(db, "ventas")
+
+    const venta ={
+        usuario: {nombre : "Juan", telefono : 123456789, email : "p9HrK@example.com"},
+        fecha: serverTimestamp()
+    }
+    const consulta = addDoc(saleCollection,venta)
+
+    consulta
+    .then((result) => 
+        console.log(result))
+    .catch((error) => 
+        console.log(error))
 }
